@@ -12,7 +12,6 @@ ValidateFormatPlugin.init()
 WithAwsPlugin.withRole().init()
 
 ConditionalApplyPlugin.withApplyOnBranch('main')
-DestroyPlugin.init()
 TerraformEnvironmentStage
             .withGlobalEnv("PROJECT", "demo")
             .withGlobalEnv("region", "ap-southeast-1")
