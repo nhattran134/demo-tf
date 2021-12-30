@@ -21,7 +21,7 @@ def validate = new TerraformValidateStage()
 def deployDev = new TerraformEnvironmentStage('dev')
 def deployQA =new TerraformEnvironmentStage('qa')
 
-TerraformDirectoryPlugin.withDirectory('./nathantr').init()
+TerraformDirectoryPlugin.withDirectory('./nathantr/').init()
 validate.then(deployDev)
         .then(deployQA)
         .build()
