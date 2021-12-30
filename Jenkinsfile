@@ -11,7 +11,7 @@ Jenkinsfile.init(this, Customizations)
 ValidateFormatPlugin.init()
 WithAwsPlugin.withRole().init()
 
-ConditionalApplyPlugin.withApplyOnBranch('myMasterReplacement')
+ConditionalApplyPlugin.withApplyOnBranch('main')
 
 TerraformEnvironmentStage
             .withGlobalEnv("PROJECT", "demo")
