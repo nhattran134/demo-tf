@@ -9,7 +9,6 @@ properties ([
 
 Jenkinsfile.init(this, Customizations)
 ValidateFormatPlugin.init()
-JenkinsCrqLibraryStrategy.init()
 WithAwsPlugin.withRole().init()
 TerraformEnvironmentStage
             .withGlobalEnv("PROJECT", "demo")
