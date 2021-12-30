@@ -10,6 +10,9 @@ properties ([
 Jenkinsfile.init(this, Customizations)
 ValidateFormatPlugin.init()
 WithAwsPlugin.withRole().init()
+
+ConditionalApplyPlugin.withApplyOnBranch('myMasterReplacement')
+
 TerraformEnvironmentStage
             .withGlobalEnv("PROJECT", "demo")
             .withGlobalEnv("region", "ap-southeast-1")
