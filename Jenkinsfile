@@ -17,7 +17,6 @@ TerraformEnvironmentStage
             .withGlobalEnv("region", "ap-southeast-1")
 
 def validate = new TerraformValidateStage()
-// We only have NonProd and Prod in the UCI project, in this project "QA" (library preferred) refers to "Non prod".
 def deployDev = new TerraformEnvironmentStage('dev')
 def deployQA =new TerraformEnvironmentStage('qa')
 
