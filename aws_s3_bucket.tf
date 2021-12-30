@@ -1,5 +1,5 @@
 resource "aws_s3_bucket" "uci-buckets" {
-  bucket   = "${each.value}-${var.environment}"
+  bucket   = "demo-${var.environment}"
   acl      = "private"
   versioning {
     enabled = true
