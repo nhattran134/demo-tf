@@ -6,7 +6,7 @@ properties ([
       strategy: [$class: 'LogRotator', numToKeepStr: '10']
     ]
 ])
-sh 'who'
+
 Jenkinsfile.init(this, Customizations)
 ValidateFormatPlugin.init()
 WithAwsPlugin.withRole().init()
