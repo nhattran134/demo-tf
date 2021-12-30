@@ -1,4 +1,4 @@
-@Library(['manheim-terraform-pipeline@v5.18', 'demo-tf-customization']) _
+@Library(['manheim-terraform-pipeline@v5.18', 'demo-tf-customization@0.3']) _
 
 properties ([
     [
